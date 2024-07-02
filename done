@@ -1,0 +1,19 @@
+SELECT order_id
+FROM   courier_actions
+WHERE  date_part('year', time) = 2022
+   and date_part('month', time) = 8
+   and date_part('day', time) between 1
+   and 31
+   and action like 'accept_order'
+ORDER BY order_id asc
+
+
+
+
+SELECT order_id
+FROM   courier_actions
+WHERE  date_part('year', time) = 2022
+   and date_part('month', time) = 8
+  
+   and action like 'accept_order'
+ORDER BY order_id asc
